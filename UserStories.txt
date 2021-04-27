@@ -1,0 +1,9 @@
+US1:
+User types search term in input box, clicks the Search button and scrolls down to look at the Giphy images
+
+US2:
+When user gets to the bottom, user can click on Back to Top link to get back to the top of page
+
+US3:
+User opens the hamburger menu button on top right, then has the choice to go to Search section, or click on Contact or About to go
+to these two sections at the bottom

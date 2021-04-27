@@ -2,6 +2,8 @@
 <html>
 <head>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script2.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>-->
@@ -9,12 +11,29 @@
 
 
 <body>
+<!-- Top Navigation Menu -->
+<div class="topnav" id="topnav">
+    <a href="#home" class="active">GIPHY Search API</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#search-term">Search</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
 
 <input type="search" class="border p-3 w-full" placeholder="Type your query here..." id='search-term' />
 
 <button id='search-button' class="p-2 w-1/2 md:w-full pr-3 pl-3 text-white bg-blue-500 rounded">Search</button>
 
 <div class='col-span-12 p-4 border mt-4' id='results'></div>
-
+<div><a href="#topnav" id='back-to-top'>Back to Top</a></div>
+<div id='about'>About: 2021</div>
+<div id='contact'>Contact: Email</div>
 </body>
 </html>

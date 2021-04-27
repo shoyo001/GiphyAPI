@@ -1,0 +1,12 @@
+* Sergio
+* Page to query Giphy API and display 10 images based on the search
+* Can type a search term and press on button to search Giphy images.  Can open a hamburger menu to search, go to contact section,
+or about section. The user can scroll down to see all images.  Once at the bottom, the user can click on Back to Top link to get back
+to the top of page.
+* Technologies: HTML, CSS, Javascript
+Ideas for future improvement:
+* Allow user to choose, from a number range, the number of images to display. For example: 10, 20, or 50 images
+* Be able to click on an image and display it on a separate tab with larger size
+* Include links to social media such as Instagram
+
+

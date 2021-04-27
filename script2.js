@@ -1,3 +1,12 @@
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  let x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 const apiKey = 'aYq4MvAM6GGGZkCkur2TYGheuDEyaTr4';// YouTube 'AIzaSyAiuPU-DXcVOpe256Q_RPT9tds1PfvB6nk';
 
@@ -34,17 +43,21 @@ window.addEventListener('load', (event) => {
           console.log(i);
           // document.getElementById('results').innerHTML = document.getElementById('results').innerHTML + `<h1 class='text-xl'>${result.snippet.title}</h1>`;
   
-          document.getElementById('results').innerHTML = document.getElementById('results').innerHTML + `<div class='p-5 border-b border-gray-300'>
-          <h1 class='text-xl mb-5 font-bold'>${json.data[i].slug}</h1>
-          
-          <iframe width="560" height="315" src="${json.data[i].images.original.url}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
+          document.getElementById('results').innerHTML = document.getElementById('results').innerHTML + `<div class='p-5 border-b border-gray-300 centercss'>
+          <h1 class='text-xl mb-5 font-bold'>${json.data[i].slug}</h1> 
           </div>
+          <div class='centercss'>
+          <iframe width="560" height="315" src="${json.data[i].images.original.url}" title="Giphy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          </div>
+          <div><br><br></div>
           `;
   
           // 1. Show the results on the screen - Show the title on the screen 
-          // 2. Instead of always searching for Ohio, search for the string that the user types in the search box       
+                
           // 3. Show the video preview on the screen - HINT - Look up a youtube video and click on share and look up the embed video code. its an iframe you will need to use.
+        /*<img src="${json.data[i].images.original.url}"/>
+        */
         }
       })
   
